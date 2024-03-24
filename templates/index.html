@@ -1,13 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload Image</title>
+    <title>Retail Shelf Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .upload-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .upload-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .upload-form input[type="file"] {
+            display: none;
+        }
+
+        .upload-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .upload-button:hover {
+            background-color: #0056b3;
+        }
+
+        .output-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .output-image {
+            max-width: 100%; /* Adjust as needed */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: none; /* Initially hidden */
+        }
+
+        .json-container {
+            flex-grow: 1;
+            max-width: calc(30% - 20px); /* Adjust as needed */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow-y: auto;
+            height: auto; /* Adjust as needed */
+            display: none; /* Initially hidden */
+        }
+
+        .json-container pre {
+            margin: 0;
+            padding: 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .display-button,
+        .download-button {
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .display-button:hover,
+        .download-button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload Image</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept="image/*">
-        <button type="submit">Upload</button>
-    </form>
+    <h1>Retail Shelf Scanner</h1>
+    <div class="upload-form">
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file" class="file-label">Choose Image</label>
+            <input type="file" id="file" name="file" accept="image/*">
+            <button type="submit" class="upload-button">Upload</button>
+        </form>
+        <div class="output-container" id="output-container">
+            <!-- Image container -->
+            <div class="image-container">
+                <img src="" id="output-image" class="output-image">
+            </div>
+            <!-- JSON container -->
+            <div class="json-container" id="json-container"></div>
+        </div>
+        <!-- Button container -->
+        <div class="button-container">
+            <button class="display-button" id="display-button">Display JSON</button>
+            <button class="download-button" id="download-button">Download JSON</button>
+        </div>
+    </div>
+    <script>
+        // Add event listener for form submission
+        document.getElementById('upload-form').addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Submit the form using AJAX
+            var formData = new FormData(this);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/upload');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.image_with_boxes) {
+                        // Display the image with bounding boxes
+                        var img = document.getElementById('output-image');
+                        img.src = 'data:image/png;base64,' + response.image_with_boxes;
+                        img.style.display = 'block';
+
+                        // Show the button container
+                        var buttonContainer = document.querySelector('.button-container');
+                        buttonContainer.style.display = 'block';
+                    } else {
+                        // Display error message if image_with_boxes is not available
+                        console.error('Image with bounding boxes not found in response');
+                    }
+                } else {
+                    // Display error message if request fails
+                    console.error('Request failed with status:', xhr.status);
+                }
+            };
+            xhr.send(formData);
+        });
+
+        // Add event listener for Display JSON button
+        document.getElementById('display-button').addEventListener('click', function() {
+            // Toggle display of JSON container
+            var jsonContainer = document.getElementById('json-container');
+            jsonContainer.style.display = jsonContainer.style.display === 'none' ? 'block' : 'none';
+
+            // Update button text
+            this.textContent = jsonContainer.style.display === 'none' ? 'Display JSON' : 'Hide JSON';
+        });
+
+        // Function to download JSON response
+        document.getElementById('download-button').addEventListener('click', function() {
+            // Placeholder function, you need to implement download logic here
+            console.log('Download JSON');
+        });
+    </script>
 </body>
 </html>

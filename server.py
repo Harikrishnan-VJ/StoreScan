@@ -1,7 +1,9 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify, send_file, send_from_directory
 import os
 import cv2
 import numpy as np
+import base64
+import json
 
 app = Flask(__name__)
 
@@ -44,11 +46,25 @@ def upload_image():
     image = cv2.imdecode(np.fromstring(file.read(), np.uint8), cv2.IMREAD_COLOR)
 
     # Perform object detection
-    detected_objects = perform_object_detection(image)
+    detected_objects, image_with_boxes = perform_object_detection(image)
 
-    # Return JSON response
-    return jsonify({'detected_objects': detected_objects})
+    # Encode image to base64
+    _, img_encoded = cv2.imencode('.png', image_with_boxes)
+    img_base64 = base64.b64encode(img_encoded).decode('utf-8')
 
+    # Save JSON data to file
+    json_filename = 'detected_objects.json'
+    json_path = os.path.join(app.root_path, json_filename)
+    with open(json_path, 'w') as json_file:
+        json.dump(detected_objects, json_file)
+
+    # Return JSON response with detected objects, base64 encoded image, and JSON filename
+    return jsonify({'detected_objects': detected_objects, 'image_with_boxes': img_base64, 'json_filename': json_filename})
+
+# Define route to download JSON file
+@app.route('/download/<filename>')
+def download_json(filename):
+    return send_from_directory(app.root_path, filename)
 
 def perform_object_detection(image):
     height, width = image.shape[:2]
@@ -64,6 +80,7 @@ def perform_object_detection(image):
 
     # Process outputs
     detected_objects = []
+    image_with_boxes = image.copy()
     for output in output_layers:
         for detection in output:
             scores = detection[5:]
@@ -87,7 +104,10 @@ def perform_object_detection(image):
                     'height': int(h)
                 })
 
-    return detected_objects
+                # Draw bounding box on image
+                cv2.rectangle(image_with_boxes, (x, y), (x + int(w), y + int(h)), (0, 255, 0), 2)
+
+    return detected_objects, image_with_boxes
 
 
 if __name__ == '__main__':
