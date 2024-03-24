@@ -1,6 +1,6 @@
 # Object Detection and Clustering Pipeline
 
-This Flask application performs object detection using YOLOv4-tiny model and clusters the detected objects based on color similarity using the KMeans algorithm.
+This Flask application performs object detection using YOLOv4-tiny model and clusters the detected objects based on colour similarity using the KMeans algorithm.
 
 ## Installation
 
@@ -8,7 +8,6 @@ This Flask application performs object detection using YOLOv4-tiny model and clu
     ```
     git clone https://github.com/Harikrishnan-VJ/StoreScan.git
     cd StoreScan
-
     ```
 
 2. Install dependencies:
