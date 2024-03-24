@@ -1,0 +1,6 @@
+classes = 1
+train = /home/user/hari/train/train.txt
+valid = /home/user/hari/train/val.txt
+names = obj.names
+backup = /home/user/hari/train/backup
+saveweights = 1000
