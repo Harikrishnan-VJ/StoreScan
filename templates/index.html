@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #daf5fd;
             padding: 20px;
         }
 
@@ -120,6 +120,8 @@
             <!-- JSON container -->
             <div class="json-container" id="json-container"></div>
         </div>
+        <!-- Element to hold the JSON filename -->
+        <div id="json-filename" style="display: none;"></div>
         <!-- Button container -->
         <div class="button-container">
             <button class="display-button" id="display-button">Display JSON</button>
@@ -148,6 +150,11 @@
                         // Show the button container
                         var buttonContainer = document.querySelector('.button-container');
                         buttonContainer.style.display = 'block';
+
+                        // Store the JSON filename
+                        var jsonFilename = response.json_filename;
+                        var jsonFilenameElement = document.getElementById('json-filename');
+                        jsonFilenameElement.textContent = jsonFilename;
                     } else {
                         // Display error message if image_with_boxes is not available
                         console.error('Image with bounding boxes not found in response');
@@ -172,9 +179,22 @@
 
         // Function to download JSON response
         document.getElementById('download-button').addEventListener('click', function() {
-            // Placeholder function, you need to implement download logic here
-            console.log('Download JSON');
+            // Get the JSON filename from the response
+            var jsonFilename = document.getElementById('json-filename').textContent;
+            // Construct the URL for downloading the JSON file
+            var downloadUrl = '/download/' + jsonFilename;
+            // Create an anchor element to trigger the download
+            var link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = jsonFilename;
+            // Append the anchor element to the document body
+            document.body.appendChild(link);
+            // Trigger a click event on the anchor element
+            link.click();
+            // Remove the anchor element from the document body
+            document.body.removeChild(link);
         });
+
     </script>
 </body>
 </html>

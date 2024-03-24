@@ -64,7 +64,7 @@ def upload_image():
 # Define route to download JSON file
 @app.route('/download/<filename>')
 def download_json(filename):
-    return send_from_directory(app.root_path, filename)
+    return send_from_directory(app.root_path, filename, as_attachment=True)
 
 def perform_object_detection(image):
     height, width = image.shape[:2]
