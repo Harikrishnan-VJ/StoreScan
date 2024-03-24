@@ -6,26 +6,21 @@ This Flask application performs object detection using YOLOv4-tiny model and clu
 
 1. Clone the repository:
     ```
-    git clone <repository-url>
-    cd <repository-folder>
+    git clone https://github.com/Harikrishnan-VJ/StoreScan.git
+    cd StoreScan
+
     ```
 
 2. Install dependencies:
     ```
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
-
-3. Download the YOLOv4-tiny weights and configuration file:
-    - Download `yolov4-tiny.weights` and `yolov4-tiny.cfg` files and place them in the root directory of the project.
-
-4. Create `obj.names` file:
-    - Create a file named `obj.names` and add the names of the classes detected by YOLOv4-tiny, each on a new line.
 
 ## Usage
 
 1. Run the Flask application:
     ```
-    python app.py
+    python3 app.py
     ```
 
 2. Open a web browser and go to `http://127.0.0.1:5000/` to access the web interface.
