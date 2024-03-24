@@ -1,6 +1,6 @@
 # Object Detection and Clustering Pipeline
 
-This Flask application performs object detection using YOLOv4-tiny model and clusters the detected objects based on color similarity using KMeans algorithm.
+This Flask application performs object detection using YOLOv4-tiny model and clusters the detected objects based on color similarity using the KMeans algorithm.
 
 ## Installation
 
@@ -25,9 +25,10 @@ This Flask application performs object detection using YOLOv4-tiny model and clu
 
 2. Open a web browser and go to `http://127.0.0.1:5000/` to access the web interface.
 
-3. Upload an image file using the provided form.
-
-4. The application will perform object detection and clustering on the uploaded image, and display the result with bounding boxes drawn around the detected objects.
+3. **App UI Steps:**
+    - Click on "Choose Image" and select the image you want to analyze.
+    - Click "Upload" and wait for the output to be displayed.
+    - Once the output is shown, click on the "Download JSON" button at the bottom of the image to download the JSON file containing the detected objects.
 
 ## Files and Directories
 
@@ -36,9 +37,13 @@ This Flask application performs object detection using YOLOv4-tiny model and clu
 - `obj.names`: File containing class names detected by YOLOv4-tiny.
 - `yolov4-tiny.cfg`: YOLOv4-tiny configuration file.
 - `yolov4-tiny.weights`: YOLOv4-tiny pre-trained weights file.
+- `sample_images/`: Directory containing sample images for testing the application.
 - `requirements.txt`: File containing Python dependencies.
+
+**Note:** Sample images are provided in the `sample_images/` directory. You can test the application using these images.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
