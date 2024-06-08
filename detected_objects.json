@@ -1,0 +1,702 @@
+{
+    "3": [
+        {
+            "class_name": "object",
+            "confidence": 0.8693620562553406,
+            "x": 602,
+            "y": 71,
+            "width": 264,
+            "height": 234
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.741750955581665,
+            "x": 597,
+            "y": 82,
+            "width": 304,
+            "height": 224
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7206372618675232,
+            "x": 449,
+            "y": 314,
+            "width": 135,
+            "height": 197
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8513940572738647,
+            "x": 458,
+            "y": 317,
+            "width": 130,
+            "height": 193
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.937782347202301,
+            "x": 592,
+            "y": 330,
+            "width": 136,
+            "height": 192
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8740425109863281,
+            "x": 694,
+            "y": 591,
+            "width": 78,
+            "height": 273
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8134802579879761,
+            "x": 698,
+            "y": 592,
+            "width": 78,
+            "height": 275
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9408376216888428,
+            "x": 431,
+            "y": 939,
+            "width": 78,
+            "height": 181
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.971376895904541,
+            "x": 426,
+            "y": 934,
+            "width": 87,
+            "height": 187
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9850035905838013,
+            "x": 517,
+            "y": 941,
+            "width": 80,
+            "height": 177
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9800962805747986,
+            "x": 514,
+            "y": 935,
+            "width": 86,
+            "height": 183
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9942321181297302,
+            "x": 600,
+            "y": 950,
+            "width": 69,
+            "height": 168
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9928099513053894,
+            "x": 674,
+            "y": 930,
+            "width": 73,
+            "height": 185
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9130643606185913,
+            "x": 671,
+            "y": 926,
+            "width": 81,
+            "height": 195
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9838254451751709,
+            "x": 756,
+            "y": 935,
+            "width": 70,
+            "height": 182
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8151164054870605,
+            "x": 749,
+            "y": 926,
+            "width": 81,
+            "height": 199
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9153411388397217,
+            "x": 914,
+            "y": 942,
+            "width": 70,
+            "height": 172
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9276958703994751,
+            "x": 922,
+            "y": 942,
+            "width": 65,
+            "height": 171
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9882057905197144,
+            "x": 989,
+            "y": 947,
+            "width": 60,
+            "height": 166
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8938283920288086,
+            "x": 1049,
+            "y": 950,
+            "width": 50,
+            "height": 162
+        }
+    ],
+    "7": [
+        {
+            "class_name": "object",
+            "confidence": 0.8287257552146912,
+            "x": 892,
+            "y": 35,
+            "width": 114,
+            "height": 282
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8869292140007019,
+            "x": 891,
+            "y": 35,
+            "width": 123,
+            "height": 282
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6297615766525269,
+            "x": 1093,
+            "y": 36,
+            "width": 31,
+            "height": 270
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5669246315956116,
+            "x": 1085,
+            "y": 30,
+            "width": 40,
+            "height": 283
+        }
+    ],
+    "0": [
+        {
+            "class_name": "object",
+            "confidence": 0.9695273041725159,
+            "x": 736,
+            "y": 394,
+            "width": 142,
+            "height": 185
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6217924356460571,
+            "x": 880,
+            "y": 391,
+            "width": 138,
+            "height": 201
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9797145128250122,
+            "x": 886,
+            "y": 394,
+            "width": 142,
+            "height": 198
+        }
+    ],
+    "6": [
+        {
+            "class_name": "object",
+            "confidence": 0.9006091952323914,
+            "x": 83,
+            "y": 533,
+            "width": 128,
+            "height": 298
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8181666731834412,
+            "x": 221,
+            "y": 541,
+            "width": 130,
+            "height": 298
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5304974913597107,
+            "x": 83,
+            "y": 555,
+            "width": 126,
+            "height": 283
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9561028480529785,
+            "x": 218,
+            "y": 551,
+            "width": 129,
+            "height": 294
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9254411458969116,
+            "x": 332,
+            "y": 1675,
+            "width": 70,
+            "height": 180
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9118634462356567,
+            "x": 331,
+            "y": 1685,
+            "width": 71,
+            "height": 175
+        }
+    ],
+    "8": [
+        {
+            "class_name": "object",
+            "confidence": 0.9453223347663879,
+            "x": 350,
+            "y": 580,
+            "width": 108,
+            "height": 278
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6461794972419739,
+            "x": 461,
+            "y": 583,
+            "width": 107,
+            "height": 276
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.577547013759613,
+            "x": 468,
+            "y": 589,
+            "width": 109,
+            "height": 267
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7829243540763855,
+            "x": 582,
+            "y": 592,
+            "width": 111,
+            "height": 267
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8960381746292114,
+            "x": 777,
+            "y": 587,
+            "width": 69,
+            "height": 281
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7754969596862793,
+            "x": 850,
+            "y": 608,
+            "width": 75,
+            "height": 257
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9205544590950012,
+            "x": 1049,
+            "y": 1672,
+            "width": 52,
+            "height": 146
+        }
+    ],
+    "1": [
+        {
+            "class_name": "object",
+            "confidence": 0.5104647278785706,
+            "x": 932,
+            "y": 694,
+            "width": 113,
+            "height": 164
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7050372362136841,
+            "x": 277,
+            "y": 876,
+            "width": 88,
+            "height": 242
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8959450721740723,
+            "x": 278,
+            "y": 889,
+            "width": 85,
+            "height": 235
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8235911726951599,
+            "x": 370,
+            "y": 943,
+            "width": 56,
+            "height": 179
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8978618383407593,
+            "x": 837,
+            "y": 926,
+            "width": 74,
+            "height": 189
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9644116163253784,
+            "x": 831,
+            "y": 920,
+            "width": 86,
+            "height": 200
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7361980080604553,
+            "x": 242,
+            "y": 1659,
+            "width": 86,
+            "height": 209
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9450494050979614,
+            "x": 408,
+            "y": 1667,
+            "width": 62,
+            "height": 189
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7485479712486267,
+            "x": 244,
+            "y": 1687,
+            "width": 81,
+            "height": 177
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8702223896980286,
+            "x": 241,
+            "y": 1680,
+            "width": 85,
+            "height": 190
+        }
+    ],
+    "4": [
+        {
+            "class_name": "object",
+            "confidence": 0.6939858198165894,
+            "x": 166,
+            "y": 870,
+            "width": 110,
+            "height": 253
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5769023299217224,
+            "x": 152,
+            "y": 878,
+            "width": 117,
+            "height": 253
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8541869521141052,
+            "x": 169,
+            "y": 881,
+            "width": 106,
+            "height": 250
+        }
+    ],
+    "2": [
+        {
+            "class_name": "object",
+            "confidence": 0.6554948687553406,
+            "x": 576,
+            "y": 1234,
+            "width": 44,
+            "height": 125
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5297312140464783,
+            "x": 212,
+            "y": 1281,
+            "width": 54,
+            "height": 241
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8407458066940308,
+            "x": 207,
+            "y": 1265,
+            "width": 64,
+            "height": 261
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7808421850204468,
+            "x": 272,
+            "y": 1300,
+            "width": 40,
+            "height": 224
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5764307379722595,
+            "x": 317,
+            "y": 1315,
+            "width": 51,
+            "height": 212
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5495628714561462,
+            "x": 322,
+            "y": 1322,
+            "width": 52,
+            "height": 205
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8363544344902039,
+            "x": 386,
+            "y": 1347,
+            "width": 45,
+            "height": 177
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7842373847961426,
+            "x": 436,
+            "y": 1362,
+            "width": 38,
+            "height": 161
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8391477465629578,
+            "x": 478,
+            "y": 1368,
+            "width": 38,
+            "height": 155
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8413627743721008,
+            "x": 519,
+            "y": 1370,
+            "width": 37,
+            "height": 152
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.880896806716919,
+            "x": 560,
+            "y": 1376,
+            "width": 36,
+            "height": 144
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5879389643669128,
+            "x": 597,
+            "y": 1389,
+            "width": 37,
+            "height": 129
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.875007688999176,
+            "x": 638,
+            "y": 1314,
+            "width": 42,
+            "height": 203
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.511412501335144,
+            "x": 707,
+            "y": 1300,
+            "width": 44,
+            "height": 210
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7319940328598022,
+            "x": 582,
+            "y": 1932,
+            "width": 119,
+            "height": 66
+        }
+    ],
+    "5": [
+        {
+            "class_name": "object",
+            "confidence": 0.528933048248291,
+            "x": 834,
+            "y": 1340,
+            "width": 41,
+            "height": 166
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.588533878326416,
+            "x": 876,
+            "y": 1288,
+            "width": 46,
+            "height": 217
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6857324242591858,
+            "x": 929,
+            "y": 1302,
+            "width": 62,
+            "height": 198
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7744739651679993,
+            "x": 1078,
+            "y": 1341,
+            "width": 46,
+            "height": 161
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.7164106965065002,
+            "x": 260,
+            "y": 1618,
+            "width": 91,
+            "height": 49
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.9504370093345642,
+            "x": 127,
+            "y": 1606,
+            "width": 110,
+            "height": 249
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5199941992759705,
+            "x": 330,
+            "y": 1662,
+            "width": 78,
+            "height": 200
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8601744174957275,
+            "x": 474,
+            "y": 1648,
+            "width": 36,
+            "height": 209
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8231951594352722,
+            "x": 639,
+            "y": 1631,
+            "width": 68,
+            "height": 213
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6939518451690674,
+            "x": 634,
+            "y": 1617,
+            "width": 73,
+            "height": 232
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8206174373626709,
+            "x": 712,
+            "y": 1666,
+            "width": 72,
+            "height": 174
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5807336568832397,
+            "x": 790,
+            "y": 1685,
+            "width": 69,
+            "height": 138
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6332288980484009,
+            "x": 859,
+            "y": 1605,
+            "width": 85,
+            "height": 224
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.8961512446403503,
+            "x": 979,
+            "y": 1634,
+            "width": 63,
+            "height": 181
+        }
+    ],
+    "9": [
+        {
+            "class_name": "object",
+            "confidence": 0.8132352828979492,
+            "x": 515,
+            "y": 1653,
+            "width": 61,
+            "height": 200
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.5156121850013733,
+            "x": 585,
+            "y": 1633,
+            "width": 48,
+            "height": 213
+        },
+        {
+            "class_name": "object",
+            "confidence": 0.6290786862373352,
+            "x": 727,
+            "y": 1910,
+            "width": 155,
+            "height": 82
+        }
+    ]
+}
