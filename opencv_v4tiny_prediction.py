@@ -1,10 +1,35 @@
 import cv2
 import numpy as np
+
+
+"""
+
+YOLOv4 Tiny Object Detection Script
+
+This script performs object detection on an input image using the YOLOv4 Tiny model.
+It loads the model and its configuration, preprocesses the input image, runs the model
+to get detections, processes the detections to draw bounding boxes, and finally saves the result.
+
+Dependencies:
+- OpenCV
+- NumPy
+
+Files Required:
+- YOLOv4 Tiny weights file: yolov4-tiny-sk_best.weights
+- YOLOv4 Tiny configuration file: yolov4-tiny-sk.cfg
+- Classes file: obj-sk.names
+- Input image file: 12.jpg
+
+Author: Harikrishnan_VJ
+
+"""
+
+
 # Load YOLOv4 Tiny model and its configuration
-net = cv2.dnn.readNet("/home/trois/darknet/yolov4-tiny-sk_best.weights", "/home/trois/darknet/yolov4-tiny-sk.cfg")
+net = cv2.dnn.readNet("yolov4-tiny.weights", "yolov4-tiny.cfg")
 
 # Load classes
-with open("/home/trois/darknet/obj-sk.names", "r") as f:
+with open("obj.names", "r") as f:
     classes = f.read().strip().split("\n")
 
 
@@ -12,7 +37,7 @@ with open("/home/trois/darknet/obj-sk.names", "r") as f:
 output_layer_names = net.getUnconnectedOutLayersNames()
 
 # Load image
-image = cv2.imread("/home/trois/darknet/sk_images/12.jpg")
+image = cv2.imread("image.jpg")
 height, width = image.shape[:2]
 
 
@@ -45,6 +70,5 @@ for output in outputs:
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.putText(image, classes[class_id], (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
-# Display result
-cv2.imwrite('out.jpg', image)
-
+# Save result
+cv2.imwrite('output.jpg', image)
