@@ -1,6 +1,24 @@
-# Object Detection and Clustering Pipeline
+# StoreScan: Object Detection and Clustering Pipeline
 
-This Flask application performs object detection using YOLOv4-tiny model and clusters the detected objects based on colour similarity using the KMeans algorithm.
+StoreScan is a Flask application designed to facilitate product categorization in images. It utilizes advanced object detection and clustering techniques to identify products within images and group them based on color similarity. This application provides an intuitive web interface for users to upload images and receive JSON-formatted detection results.
+
+## Project Overview
+
+StoreScan simplifies the process of analyzing retail shelf images by automating the detection and categorization of products. Users can upload images containing various products, and the application will detect each product and assign it to a specific category based on color similarity. This streamlines inventory management and product organization tasks for retail businesses.
+
+## Application Design
+
+StoreScan serves as an AI pipeline with the following key components:
+
+1. **Flask Webserver:** Handles HTTP requests and provides a user-friendly web interface for uploading images.
+2. **Detection Model:** Utilizes the YOLOv4-tiny model trained on the SKU110K Dataset to detect products within images accurately.
+3. **Product Grouping:** Employs the KMeans algorithm to cluster detected products based on color features, allowing for efficient categorization.
+
+This application streamlines the process of product detection and categorization, enhancing productivity and accuracy in retail inventory management.
+
+## Dataset
+
+The dataset used for training the object detection model is the SKU110K Dataset, available at [Kaggle](https://www.kaggle.com/datasets/thedatasith/sku110k-annotations). This dataset provides annotated images of products commonly found on retail shelves, making it ideal for training object detection models for retail applications.
 
 ## Installation
 
