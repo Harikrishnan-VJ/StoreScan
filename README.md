@@ -57,7 +57,7 @@ The dataset used for training the object detection model is the SKU110K Dataset,
 - `sample_images/`: Directory containing sample images for testing the application.
 - `requirements.txt`: File containing Python dependencies.
 
-**Note:** Sample images are provided in the `sample_images/` directory. You can test the application using these images.
+**Note:** Feel free to test the application using the sample images provided in the sample_images/ directory.
 
 ## License
 
